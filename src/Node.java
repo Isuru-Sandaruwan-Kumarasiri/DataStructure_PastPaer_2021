@@ -56,10 +56,10 @@ public class Node {
     @Override
     public String toString() {
         return
-                "registerNumber='" + registerNumber + '\n' +
-                ", name='" + name + '\n' +
-                ", age='" + age + '\n' +
-                ", event='" + event + '\n' ;
+                "registerNumber=" + registerNumber + '\n' +
+                " name=" + name + '\n' +
+                " age=" + age + '\n' +
+                " event=" + event + '\n' ;
 
     }
 }

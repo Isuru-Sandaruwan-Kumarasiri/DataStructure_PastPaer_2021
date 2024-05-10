@@ -2,7 +2,7 @@ public class LinkedList {
       private  Node head;
       private Node tail;
 
-    public LinkedList(Node head, Node tail) {
+    public LinkedList() {
         this.head = this.tail = null;
     }
     public void  insertFront(String registerNumber, String name, String age, String event){

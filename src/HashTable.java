@@ -28,6 +28,19 @@ public class HashTable {
         }
     }
     public void addStudents(String registerNumber, String name, String age, String event){
-        
+       int index=index(registerNumber);
+       if(list[index]==null){
+           LinkedList LL=new LinkedList();
+           list[index]=LL;
+           LL.insertEnd(registerNumber,name,age,event);
+       }else{
+           list[index].insertEnd(registerNumber,name,age,event);
+       }
+
     }
+   public void search(String reg){
+       int index=index(reg);
+       LinkedList temp=list[index];
+       temp.search(reg);
+   }
 }
