@@ -1,3 +1,5 @@
+package question_01;
+
 public class LinkedList {
       private  Node head;
       private Node tail;

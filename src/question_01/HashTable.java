@@ -1,3 +1,5 @@
+package question_01;
+
 public class HashTable {
 
     LinkedList [] list=new LinkedList[10];
