@@ -38,4 +38,31 @@ public class Queue {
         this.rear.setNext(newNode);
         this.rear=newNode;
     }
+    public void insertDescending(int data){
+        Node newNode=new Node(data);
+        Node temp=this.front;
+        Node pre_node=null;
+        if(this.front==null){
+            this.front=this.rear=newNode;
+            return;
+        }else {
+            while(temp!=null){
+                if(temp.getData()<= newNode.getData()){
+                    if(this.front==temp){
+                        newNode.setNext(this.front);
+                        this.front=newNode;
+                        return;
+                    }else{
+                        pre_node.setNext(newNode);
+                        newNode.setNext(temp);
+                        return;
+                    }
+                }
+                pre_node=temp;
+                temp=temp.getNext();
+            }
+        }
+        this.rear.setNext(newNode);
+        this.rear=newNode;
+    }
 }
